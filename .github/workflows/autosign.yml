@@ -30,7 +30,11 @@ jobs:
     steps:
     - name: 检出代码
       uses: actions/checkout@v4
-      
+    - name: Setup Chrome
+      uses: browser-actions/setup-chrome@v1
+      with:
+          chrome-version: 155 # 强制云端环境安装与驱动一致的 155 版本    
+          
     - name: 设置 Python 环境
       uses: actions/setup-python@v4
       with:

@@ -81,9 +81,9 @@ jobs:
         SITE_PASSWORD: ${{ secrets.SITE_PASSWORD }}
         
         # 安全提问配置
-        ENABLE_SECURITY_QUESTION: ${{ vars.ENABLE_SECURITY_QUESTION || 'false' }}
-        SECURITY_QUESTION: ${{ secrets.SECURITY_QUESTION }}
-        SECURITY_ANSWER: ${{ secrets.SECURITY_ANSWER }}
+        ENABLE_SECURITY_QUESTION: ${{ vars.ENABLE_SECURITY_QUESTION || 'true' }}
+        SECURITY_QUESTION: ${{ secrets.SECURITY_QUESTION=您个人计算机的型号 }}
+        SECURITY_ANSWER: ${{ secrets.SECURITY_ANSWER=联想 }}
         
         # 核心功能配置
         BASE_URL: ${{ vars.BASE_URL || 'https://www.sehuatang.org' }}
@@ -215,9 +215,9 @@ jobs:
         SITE_PASSWORD: ${{ secrets.SITE_PASSWORD }}
         
         # 安全提问配置
-        ENABLE_SECURITY_QUESTION: ${{ vars.ENABLE_SECURITY_QUESTION || 'false' }}
-        SECURITY_QUESTION: ${{ secrets.SECURITY_QUESTION }}
-        SECURITY_ANSWER: ${{ secrets.SECURITY_ANSWER }}
+        ENABLE_SECURITY_QUESTION: ${{ vars.ENABLE_SECURITY_QUESTION || 'true' }}
+        SECURITY_QUESTION: ${{ secrets.SECURITY_QUESTION=您个人计算机的型号 }}
+        SECURITY_ANSWER: ${{ secrets.SECURITY_ANSWER=联想 }}
         
         # 核心功能配置
         BASE_URL: ${{ vars.BASE_URL || 'https://www.sehuatang.org' }}
